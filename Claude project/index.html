@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Logic &amp; Music Experiment&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="style.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Welcome Page --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="welcomePage" class="page active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Logic &amp; Music Experiment&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Welcome to Our Research Study&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;This experiment investigates how different types of background music affect logical reasoning performance.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;What to Expect&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;You will be randomly assigned to one of three music conditions&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Complete 10 logic questions in 2 minutes&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Some questions are multiple choice, others require text answers&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Music (if assigned) will play during the survey&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;The survey will auto-submit when time expires&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Privacy Statement&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="privacy-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Your data is protected:&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Used only for research purposes&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;No commercial use of any kind&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;No financial information collected&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;No credential information collected&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;Participation is voluntary and anonymous&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="startBtn" class="btn-primary"&gt;Start Survey&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Survey Page --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="surveyPage" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Logic &amp; Music Experiment&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Personal Information Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="personalInfoSection" class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Personal Information&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;form id="personalInfoForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="name"&gt;Name: &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" id="name" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="ageRange"&gt;Age Range: &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;select id="ageRange" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value=""&gt;Select age range&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="8-18"&gt;8-18&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="18-25"&gt;18-25&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="25-50"&gt;25-50&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;option value="50+"&gt;50+&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label&gt;Gender: &lt;span class="required"&gt;*&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="radio-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="gender" value="Male" required&gt; Male&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="gender" value="Female"&gt; Female&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="gender" value="Non-binary"&gt; Non-binary&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="gender" value="Prefer not to say"&gt; Prefer not to say&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="submit" class="btn-primary"&gt;Begin Survey&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Survey Questions Section (hidden initially) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="surveySection" class="section" style="display: none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="timer-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="timer" id="timer"&gt;2:00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="group-info" id="groupInfo"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;form id="surveyForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;1.&lt;/strong&gt; A frog jumps forward 2 steps, then back 1 step, then forward 2 steps again. If it starts at 0, where does it end?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q1" value="0" required&gt; 1&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q1" value="1"&gt; 2&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q1" value="2"&gt; 3&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q1" value="3"&gt; 4&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;2.&lt;/strong&gt; Amy is taller than Bob. Bob is taller than Carol. Dave is shorter than Carol. Who is the shortest?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q2" value="0" required&gt; Amy&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q2" value="1"&gt; Bob&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q2" value="2"&gt; Carol&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q2" value="3"&gt; Dave&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;3.&lt;/strong&gt; Complete the sequence: 1, 2, 4, 7, 11, ___&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q3" value="0" required&gt; 14&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q3" value="1"&gt; 15&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q3" value="2"&gt; 16&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q3" value="3"&gt; 17&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;4.&lt;/strong&gt; If this arrow rotates 90° clockwise, which direction will it point?&lt;br&gt;↑&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q4" value="0" required&gt; →&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q4" value="1"&gt; ↓&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q4" value="2"&gt; ←&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 5 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;5.&lt;/strong&gt; Each shape has a value:&lt;br&gt;● = 2<span class="Apple-converted-space">  </span>&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="Apple-converted-space">  </span>▲ = 3&lt;br&gt;What is the total value of: ● + ▲ + ● + ▲ ?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q5" value="0" required&gt; 6&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q5" value="1"&gt; 7&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q5" value="2"&gt; 8&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q5" value="3"&gt; 10&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 6 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;6.&lt;/strong&gt; A turtle is 10 steps from a rock. It moves half the distance to the rock each time:&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>First move: now 5 steps away&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Second move: now 2.5 steps away&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Third move: now 1.25 steps away&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>… and so on.&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Will the turtle ever actually touch the rock?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q6" value="0" required&gt; Yes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q6" value="1"&gt; No&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q6" value="2"&gt; It gets very close but never quite touches&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 7 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;7.&lt;/strong&gt; A farmer has 17 sheep. All but 9 die. How many sheep are left?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" name="q7" class="text-input" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 8 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;8.&lt;/strong&gt; If the day after tomorrow is two days before Thursday, what day is today?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" name="q8" class="text-input" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 9 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;9.&lt;/strong&gt; You flip a fair coin three times. Which is more likely: Getting exactly two heads, or Getting three heads? (You must choose A or B.)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q9" value="0" required&gt; A) Getting exactly two heads&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;label&gt;&lt;input type="radio" name="q9" value="1"&gt; B) Getting three heads&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question 10 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="question-text"&gt;&lt;strong&gt;10.&lt;/strong&gt; Start at the center of a compass. Move 2 steps north, 3 steps east, 2 steps south, 3 steps west. Where are you relative to the start?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" name="q10" class="text-input" placeholder="e.g., same place, north, south, east, west" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="submit" class="btn-primary"&gt;Submit Survey&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Results Page --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="resultsPage" class="page"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;Survey Complete!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="results-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Your Results&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="resultsContent"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="thank-you"&gt;Thank you for participating in our research study!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;audio id="musicPlayer" loop&gt;&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
