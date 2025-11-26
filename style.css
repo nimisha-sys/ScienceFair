@@ -1,323 +1,316 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww34360\viewh18420\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-\f0\fs24 \cf0 * \{\
-    margin: 0;\
-    padding: 0;\
-    box-sizing: border-box;\
-\}\
-\
-body \{\
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\
-    line-height: 1.6;\
-    color: #333;\
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
-    min-height: 100vh;\
-    padding: 20px;\
-\}\
-\
-.container \{\
-    max-width: 900px;\
-    margin: 0 auto;\
-    background: white;\
-    border-radius: 10px;\
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);\
-    padding: 40px;\
-\}\
-\
-h1 \{\
-    color: #667eea;\
-    text-align: center;\
-    margin-bottom: 30px;\
-    font-size: 2.5em;\
-\}\
-\
-h2 \{\
-    color: #764ba2;\
-    margin-bottom: 20px;\
-    font-size: 1.8em;\
-\}\
-\
-h3 \{\
-    color: #555;\
-    margin-top: 25px;\
-    margin-bottom: 15px;\
-    font-size: 1.3em;\
-\}\
-\
-.page \{\
-    display: none;\
-\}\
-\
-.page.active \{\
-    display: block;\
-\}\
-\
-.content ul \{\
-    margin-left: 25px;\
-    margin-bottom: 20px;\
-\}\
-\
-.content ul li \{\
-    margin-bottom: 10px;\
-\}\
-\
-.privacy-box \{\
-    background: #f8f9fa;\
-    border-left: 4px solid #667eea;\
-    padding: 20px;\
-    margin: 20px 0;\
-    border-radius: 5px;\
-\}\
-\
-.privacy-box ul \{\
-    margin-left: 20px;\
-\}\
-\
-.btn-primary \{\
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
-    color: white;\
-    border: none;\
-    padding: 15px 40px;\
-    font-size: 18px;\
-    border-radius: 50px;\
-    cursor: pointer;\
-    display: block;\
-    margin: 30px auto;\
-    transition: transform 0.2s, box-shadow 0.2s;\
-    font-weight: 600;\
-\}\
-\
-.btn-primary:hover \{\
-    transform: translateY(-2px);\
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);\
-\}\
-\
-.btn-primary:active \{\
-    transform: translateY(0);\
-\}\
-\
-.section \{\
-    margin-bottom: 40px;\
-\}\
-\
-.form-group \{\
-    margin-bottom: 25px;\
-\}\
-\
-.form-group label \{\
-    display: block;\
-    font-weight: 600;\
-    margin-bottom: 8px;\
-    color: #555;\
-\}\
-\
-.required \{\
-    color: #e74c3c;\
-\}\
-\
-input[type="text"],\
-select \{\
-    width: 100%;\
-    padding: 12px;\
-    border: 2px solid #ddd;\
-    border-radius: 5px;\
-    font-size: 16px;\
-    transition: border-color 0.3s;\
-\}\
-\
-input[type="text"]:focus,\
-select:focus \{\
-    outline: none;\
-    border-color: #667eea;\
-\}\
-\
-.radio-group \{\
-    display: flex;\
-    flex-direction: column;\
-    gap: 10px;\
-\}\
-\
-.radio-group label \{\
-    display: flex;\
-    align-items: center;\
-    font-weight: normal;\
-    cursor: pointer;\
-\}\
-\
-.radio-group input[type="radio"] \{\
-    margin-right: 10px;\
-    cursor: pointer;\
-\}\
-\
-.timer-container \{\
-    background: #f8f9fa;\
-    padding: 20px;\
-    border-radius: 10px;\
-    margin-bottom: 30px;\
-    display: flex;\
-    justify-content: space-between;\
-    align-items: center;\
-    flex-wrap: wrap;\
-    gap: 15px;\
-\}\
-\
-.timer \{\
-    font-size: 3em;\
-    font-weight: bold;\
-    color: #667eea;\
-    font-family: 'Courier New', monospace;\
-\}\
-\
-.timer.warning \{\
-    color: #e74c3c;\
-    animation: pulse 1s infinite;\
-\}\
-\
-@keyframes pulse \{\
-    0%, 100% \{ opacity: 1; \}\
-    50% \{ opacity: 0.6; \}\
-\}\
-\
-.group-info \{\
-    font-size: 1.1em;\
-    color: #555;\
-    font-weight: 600;\
-\}\
-\
-.question \{\
-    background: #f8f9fa;\
-    padding: 25px;\
-    margin-bottom: 25px;\
-    border-radius: 8px;\
-    border-left: 4px solid #667eea;\
-\}\
-\
-.question-text \{\
-    margin-bottom: 15px;\
-    font-size: 1.1em;\
-    line-height: 1.8;\
-\}\
-\
-.options \{\
-    display: flex;\
-    flex-direction: column;\
-    gap: 12px;\
-\}\
-\
-.options label \{\
-    display: flex;\
-    align-items: center;\
-    padding: 12px;\
-    background: white;\
-    border-radius: 5px;\
-    cursor: pointer;\
-    transition: background 0.2s;\
-\}\
-\
-.options label:hover \{\
-    background: #e8eaf6;\
-\}\
-\
-.options input[type="radio"] \{\
-    margin-right: 12px;\
-    cursor: pointer;\
-\}\
-\
-.text-input \{\
-    width: 100%;\
-    max-width: 400px;\
-    padding: 12px;\
-    border: 2px solid #ddd;\
-    border-radius: 5px;\
-    font-size: 16px;\
-    margin-top: 10px;\
-\}\
-\
-.text-input:focus \{\
-    outline: none;\
-    border-color: #667eea;\
-\}\
-\
-.results-container \{\
-    text-align: center;\
-    padding: 30px;\
-\}\
-\
-.results-container h2 \{\
-    color: #667eea;\
-    margin-bottom: 30px;\
-\}\
-\
-#resultsContent \{\
-    background: #f8f9fa;\
-    padding: 30px;\
-    border-radius: 10px;\
-    margin: 20px 0;\
-    font-size: 1.2em;\
-\}\
-\
-.score-display \{\
-    font-size: 3em;\
-    font-weight: bold;\
-    color: #667eea;\
-    margin: 20px 0;\
-\}\
-\
-.thank-you \{\
-    margin-top: 30px;\
-    font-size: 1.3em;\
-    color: #555;\
-    font-weight: 600;\
-\}\
-\
-/* Responsive Design */\
-@media (max-width: 768px) \{\
-    .container \{\
-        padding: 20px;\
-    \}\
-\
-    h1 \{\
-        font-size: 2em;\
-    \}\
-\
-    h2 \{\
-        font-size: 1.5em;\
-    \}\
-\
-    .timer \{\
-        font-size: 2em;\
-    \}\
-\
-    .btn-primary \{\
-        padding: 12px 30px;\
-        font-size: 16px;\
-    \}\
-\
-    .timer-container \{\
-        flex-direction: column;\
-        text-align: center;\
-    \}\
-\}\
-\
-@media (max-width: 480px) \{\
-    body \{\
-        padding: 10px;\
-    \}\
-\
-    .container \{\
-        padding: 15px;\
-    \}\
-\
-    h1 \{\
-        font-size: 1.6em;\
-    \}\
-\
-    .question \{\
-        padding: 15px;\
-    \}\
-\}}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+h1 {
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #764ba2;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.content ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.privacy-box {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.privacy-box ul {
+    margin-left: 20px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.timer-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+    color: #667eea;
+    font-family: 'Courier New', monospace;
+}
+
+.timer.warning {
+    color: #e74c3c;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.group-info {
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 600;
+}
+
+.question {
+    background: #f8f9fa;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.question-text {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.options label:hover {
+    background: #e8eaf6;
+}
+
+.options input[type="radio"] {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.text-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.results-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.results-container h2 {
+    color: #667eea;
+    margin-bottom: 30px;
+}
+
+#resultsContent {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.score-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #667eea;
+    margin: 20px 0;
+}
+
+.thank-you {
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .timer {
+        font-size: 2em;
+    }
+
+    .btn-primary {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .timer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .question {
+        padding: 15px;
+    }
+}
