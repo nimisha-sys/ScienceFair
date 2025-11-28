@@ -51,21 +51,23 @@ const QUESTIONS = [
     {
         id: 8,
         text: "If the day after tomorrow is two days before Thursday, what day is today?",
-        type: "text",
-        correctAnswer: "sunday"
+        type: "multiple",
+        options: ["Saturday", "Sunday", "Monday", "Tuesday"],
+        correctIndex: 1
     },
     {
         id: 9,
         text: "You flip a fair coin three times. Which is more likely: Getting exactly two heads, or Getting three heads?",
         type: "multiple",
-        options: ["A) Getting exactly two heads", "B) Getting three heads"],
+        options: ["Getting exactly two heads", "Getting three heads"],
         correctIndex: 0
     },
     {
         id: 10,
         text: "Start at the center of a compass. Move 2 steps north, 3 steps east, 2 steps south, 3 steps west. Where are you relative to the start?",
-        type: "text",
-        correctAnswer: "same place"
+        type: "multiple",
+        options: ["East", "West", "Same place", "None of these"],
+        correctIndex: 2
     }
 ];
 
@@ -109,8 +111,8 @@ function showSurveyPage() {
 function beginSurvey(e) {
     e.preventDefault();
     
-    // Collect personal information
-    participantData.name = document.getElementById('name').value;
+    // Collect personal information (name removed)
+    participantData.name = "Anonymous"; // Default name since field removed
     participantData.ageRange = document.getElementById('ageRange').value;
     participantData.gender = document.querySelector('input[name="gender"]:checked').value;
     participantData.timestamp = new Date().toISOString();
