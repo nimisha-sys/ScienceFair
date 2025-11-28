@@ -18,7 +18,7 @@
                 <h3>What to Expect</h3>
                 <ul>
                     <li>You will be randomly assigned to one of three music conditions</li>
-                    <li>Complete 10 logic questions in 2 minutes</li>
+                    <li>Complete 10 logic questions in 2 minutes. It's ok if you cannot finish all questions.</li>
                     <li>Some questions are multiple choice, others require text answers</li>
                     <li>Music (if assigned) will play during the survey</li>
                     <li>The survey will auto-submit when time expires</li>
@@ -51,11 +51,6 @@
                 <h2>Personal Information</h2>
                 <form id="personalInfoForm">
                     <div class="form-group">
-                        <label for="name">Name: <span class="required">*</span></label>
-                        <input type="text" id="name" required>
-                    </div>
-
-                    <div class="form-group">
                         <label for="ageRange">Age Range: <span class="required">*</span></label>
                         <select id="ageRange" required>
                             <option value="">Select age range</option>
@@ -82,7 +77,8 @@
 
             <!-- Survey Questions Section (hidden initially) -->
             <div id="surveySection" class="section" style="display: none;">
-                <div class="timer-container">
+                <!-- Fixed Timer Container -->
+                <div class="timer-container-fixed">
                     <div class="timer" id="timer">2:00</div>
                     <div class="group-info" id="groupInfo"></div>
                 </div>
@@ -166,22 +162,32 @@
                     <!-- Question 8 -->
                     <div class="question">
                         <p class="question-text"><strong>8.</strong> If the day after tomorrow is two days before Thursday, what day is today?</p>
-                        <input type="text" name="q8" class="text-input" required>
+                        <div class="options">
+                            <label><input type="radio" name="q8" value="0" required> Saturday</label>
+                            <label><input type="radio" name="q8" value="1"> Sunday</label>
+                            <label><input type="radio" name="q8" value="2"> Monday</label>
+                            <label><input type="radio" name="q8" value="3"> Tuesday</label>
+                        </div>
                     </div>
 
                     <!-- Question 9 -->
                     <div class="question">
-                        <p class="question-text"><strong>9.</strong> You flip a fair coin three times. Which is more likely: Getting exactly two heads, or Getting three heads? (You must choose A or B.)</p>
+                        <p class="question-text"><strong>9.</strong> You flip a fair coin three times. Which is more likely: Getting exactly two heads, or Getting three heads?</p>
                         <div class="options">
-                            <label><input type="radio" name="q9" value="0" required> A) Getting exactly two heads</label>
-                            <label><input type="radio" name="q9" value="1"> B) Getting three heads</label>
+                            <label><input type="radio" name="q9" value="0" required> Getting exactly two heads</label>
+                            <label><input type="radio" name="q9" value="1"> Getting three heads</label>
                         </div>
                     </div>
 
                     <!-- Question 10 -->
                     <div class="question">
                         <p class="question-text"><strong>10.</strong> Start at the center of a compass. Move 2 steps north, 3 steps east, 2 steps south, 3 steps west. Where are you relative to the start?</p>
-                        <input type="text" name="q10" class="text-input" placeholder="e.g., same place, north, south, east, west" required>
+                        <div class="options">
+                            <label><input type="radio" name="q10" value="0" required> East</label>
+                            <label><input type="radio" name="q10" value="1"> West</label>
+                            <label><input type="radio" name="q10" value="2"> Same place</label>
+                            <label><input type="radio" name="q10" value="3"> None of these</label>
+                        </div>
                     </div>
 
                     <button type="submit" class="btn-primary">Submit Survey</button>
