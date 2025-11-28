@@ -147,8 +147,11 @@ select:focus {
     cursor: pointer;
 }
 
-.timer-container {
-    background: #f8f9fa;
+/* Fixed Timer Container */
+.timer-container-fixed {
+    position: sticky;
+    top: 20px;
+    background: white;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -157,6 +160,9 @@ select:focus {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    border: 2px solid #667eea;
 }
 
 .timer {
@@ -291,9 +297,10 @@ select:focus {
         font-size: 16px;
     }
 
-    .timer-container {
+    .timer-container-fixed {
         flex-direction: column;
         text-align: center;
+        top: 10px;
     }
 }
 
