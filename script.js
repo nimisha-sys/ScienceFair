@@ -111,8 +111,14 @@ function showSurveyPage() {
 function beginSurvey(e) {
     e.preventDefault();
     
-    // Collect personal information (name removed)
-    participantData.name = "Anonymous"; // Default name since field removed
+    // Generate unique participant ID based on date and time
+    const now = new Date();
+    const dateStr = (now.getMonth() + 1).toString().padStart(2, '0') + now.getDate().toString().padStart(2, '0');
+    const timeStr = now.getHours().toString().padStart(2, '0') + now.getMinutes().toString().padStart(2, '0');
+    const uniqueId = 'P' + dateStr + '-' + timeStr;
+    
+    // Collect personal information
+    participantData.name = uniqueId; // Use unique ID instead of "Anonymous"
     participantData.ageRange = document.getElementById('ageRange').value;
     participantData.gender = document.querySelector('input[name="gender"]:checked').value;
     participantData.timestamp = new Date().toISOString();
